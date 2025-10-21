@@ -13,7 +13,7 @@ export default function PrestamosPage() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="border-b border-border/50 backdrop-blur-sm sticky top-0 z-50 bg-background/80">
+      <header className="border-b border-border/50 backdrop-blur-sm sticky top-0 z-50 bg-background/85">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center gap-4">
             <Link href="/">
@@ -22,7 +22,7 @@ export default function PrestamosPage() {
               </Button>
             </Link>
             <div className="flex items-center gap-3">
-              <BookMarked className="w-8 h-8 text-accent" />
+              <BookMarked className="w-8 h-8 text-primary" />
               <h1 className="text-3xl font-sans font-bold">Registro de Préstamos</h1>
             </div>
           </div>

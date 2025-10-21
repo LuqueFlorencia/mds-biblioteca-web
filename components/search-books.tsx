@@ -91,28 +91,29 @@ export function SearchBooks() {
 
   return (
     <div className="space-y-6">
-      <Card className="p-8 bg-card/50 backdrop-blur-sm">
+      <Card className="p-8 bg-card/85 ">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
             <Search className="w-6 h-6 text-primary" />
           </div>
           <div>
             <h2 className="text-2xl font-sans font-bold">Buscar Libros</h2>
-            <p className="text-muted-foreground">Encuentra tomos en el grimorio</p>
+            <p className="text-xl text-muted-foreground">Encuentra tomos en el grimorio</p>
           </div>
         </div>
 
         <form onSubmit={handleSearch} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="search">Buscar por título o ISBN</Label>
+            <Label htmlFor="search" className="text-xl text-primary font-bold">Buscar por título o ISBN</Label>
             <div className="flex gap-2">
               <Input
+                className="text-xl bg-card/100"
                 id="search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Ingresa título o ISBN..."
               />
-              <Button type="submit" disabled={loading}>
+              <Button type="submit" disabled={loading} className="text-xl">
                 <Search className="w-4 h-4 mr-2" />
                 Buscar
               </Button>

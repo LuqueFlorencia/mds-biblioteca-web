@@ -96,7 +96,7 @@ export function CreateLoanForm() {
   }
 
   return (
-    <Card className="p-8 bg-card/50 backdrop-blur-sm">
+    <Card className="p-8 bg-card/85 backdrop-blur-sm">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
           <BookMarked className="w-6 h-6 text-accent" />
@@ -108,7 +108,7 @@ export function CreateLoanForm() {
       </div>
 
       {loadingData ? (
-        <div className="text-center py-8 text-muted-foreground">Cargando datos...</div>
+        <div className="text-center py-8 text-xl text-primary font-bold">Cargando datos...</div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">

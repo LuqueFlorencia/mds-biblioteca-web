@@ -58,21 +58,22 @@ export function RegisterBookForm() {
   }
 
   return (
-    <Card className="p-8 bg-card/50 backdrop-blur-sm">
+    <Card className="p-8 bg-card/85 ">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
           <BookOpen className="w-6 h-6 text-primary" />
         </div>
         <div>
           <h2 className="text-2xl font-sans font-bold">Registrar Nuevo Libro</h2>
-          <p className="text-muted-foreground">Añade un nuevo tomo al grimorio</p>
+          <p className="text-primary">Añade un nuevo tomo al grimorio</p>
         </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-2">
-          <Label htmlFor="isbn">ISBN</Label>
+          <Label htmlFor="isbn" className="font-bold">ISBN</Label>
           <Input
+            className="bg-card/100"
             id="isbn"
             value={formData.isbn}
             onChange={(e) => setFormData({ ...formData, isbn: e.target.value })}
@@ -83,8 +84,9 @@ export function RegisterBookForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="title">Título</Label>
+          <Label htmlFor="title" className="font-bold">Título</Label>
           <Input
+            className="bg-card/100"
             id="title"
             value={formData.title}
             onChange={(e) => setFormData({ ...formData, title: e.target.value })}
@@ -95,8 +97,9 @@ export function RegisterBookForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="author">Autor</Label>
+          <Label htmlFor="author" className="font-bold">Autor</Label>
           <Input
+            className="bg-card/100"
             id="author"
             value={formData.author}
             onChange={(e) => setFormData({ ...formData, author: e.target.value })}
@@ -107,8 +110,9 @@ export function RegisterBookForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="copies">Cantidad de Ejemplares</Label>
+          <Label htmlFor="copies" className="font-bold">Cantidad de Ejemplares</Label>
           <Input
+            className="bg-card/100"
             id="copies"
             type="number"
             min={1}

@@ -23,14 +23,14 @@ export default function LibrosPage() {
             </Link>
             <div className="flex items-center gap-3">
               <BookOpen className="w-8 h-8 text-primary" />
-              <h1 className="text-3xl font-sans font-bold">Grimorio de Libros</h1>
+              <h1 className="text-4xl font-sans font-bold">Grimorio de Libros</h1>
             </div>
           </div>
         </div>
       </header>
 
       <div className="container mx-auto px-4 py-12">
-        {/* Tab Navigation */}
+        {/**/}
         <div className="flex gap-4 mb-8 max-w-4xl mx-auto">
           <Button
             variant={activeTab === "search" ? "default" : "outline"}

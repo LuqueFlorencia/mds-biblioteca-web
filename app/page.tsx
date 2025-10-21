@@ -4,15 +4,16 @@ import { Card } from "@/components/ui/card"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen main">
       {/* Header */}
-      <header className="border-b border-border/50 backdrop-blur-sm sticky top-0 z-50 bg-background/80">
+      <header className="border-b border-border/50 backdrop-blur-sm sticky top-0 z-50 bg-background/30">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center gap-3">
-            <Sparkles className="w-8 h-8 text-secondary" />
-            <h1 className="text-3xl font-sans font-bold text-balance">
+            <Sparkles className="w-8 h-8 " color="white"/>
+            <h1 className="text-4xl font-sans font-bold ">
               Biblioteca <span className="text-primary">Mágica</span>
             </h1>
+            <Sparkles className="w-8 h-8 " color="white"/>
           </div>
         </div>
       </header>
@@ -22,12 +23,13 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-5xl md:text-6xl font-sans font-bold text-balance leading-tight">
             Bienvenido al Reino de los{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Libros Encantados
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-            Gestiona tu biblioteca con un toque de magia. Préstamos, devoluciones y más, todo en un lugar místico y
+          <p className="text-2xl text-primary text-pretty leading-relaxed">
+            Gestiona tu biblioteca con un toque de magia.
+            Préstamos, devoluciones y más, todo en un lugar místico y
             encantador.
           </p>
         </div>
@@ -43,7 +45,7 @@ export default function HomePage() {
                   <BookOpen className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-sans font-bold">Libros</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-xl text-primary leading-relaxed">
                   Registra nuevos tomos mágicos y consulta su disponibilidad en la biblioteca
                 </p>
               </div>
@@ -53,11 +55,11 @@ export default function HomePage() {
           <Link href="/prestamos" className="group">
             <Card className="p-8 hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 bg-card/50 backdrop-blur-sm h-full">
               <div className="space-y-4">
-                <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <BookMarked className="w-8 h-8 text-accent" />
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <BookMarked className="w-8 h-8 w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-sans font-bold">Préstamos</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-xl text-primary leading-relaxed">
                   Gestiona préstamos y devoluciones de libros encantados
                 </p>
               </div>
@@ -67,11 +69,11 @@ export default function HomePage() {
           <Link href="/socios" className="group">
             <Card className="p-8 hover:border-secondary transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 bg-card/50 backdrop-blur-sm h-full">
               <div className="space-y-4">
-                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Users className="w-8 h-8 text-secondary" />
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Users className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-sans font-bold">Socios</h3>
-                <p className="text-muted-foreground leading-relaxed">Registra nuevos miembros de la comunidad mágica</p>
+                <p className="text-xl text-primary leading-relaxed">Registra nuevos miembros de la comunidad mágica</p>
               </div>
             </Card>
           </Link>
@@ -79,8 +81,8 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border/50 mt-20">
-        <div className="container mx-auto px-4 py-8 text-center text-muted-foreground">
+      <footer className="border-t border-border/50 mt-20 bg-background/30">
+        <div className="container mx-auto px-4 py-8 text-center text-primary">
           <p className="flex items-center justify-center gap-2">
             <Sparkles className="w-4 h-4" />
             Hecho con magia y código

@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${cinzel.variable} ${lora.variable}`}>
-      <body className="font-serif antialiased">{children}</body>
+      <body className="font-serif antialiased main">{children}</body>
     </html>
   )
 }

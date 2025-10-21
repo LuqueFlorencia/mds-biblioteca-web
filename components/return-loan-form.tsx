@@ -88,7 +88,7 @@ export function ReturnLoanForm() {
   }
 
   return (
-    <Card className="p-8 bg-card/50 backdrop-blur-sm">
+    <Card className="p-8 bg-card/85 backdrop-blur-sm">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
           <RotateCcw className="w-6 h-6 text-accent" />
